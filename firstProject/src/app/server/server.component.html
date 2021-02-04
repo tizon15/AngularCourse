@@ -1,2 +1,9 @@
-<!-- string interpolation -->
-<p>Server with ID  {{ serverId }} is {{ getServerStatus() }}</p>
+<!-- string interpolation 
+    {{value}}
+-->
+<!-- Attribute directives
+    ngStyle
+    ngClass
+-->
+<p [ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus === 'online'}">Server with ID  {{ serverId }} is {{ getServerStatus() }}</p>
