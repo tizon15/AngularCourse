@@ -1,3 +1,6 @@
 :host ::ng-deep .p-button {
     margin-right: .5rem;
 }
+:host ::ng-deep .p-panel {
+    margin-top: .5rem;
+}
