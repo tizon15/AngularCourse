@@ -1,0 +1,12 @@
+      <div >
+        <p-panel header="{{ element.name }}" [toggleable]="true" >
+          <p>
+            <strong *ngIf="element.type === 'server'" style="color: red">{{
+              element.content
+            }}</strong>
+            <em *ngIf="element.type === 'blueprint'" style="color: blue">{{
+              element.content
+            }}</em>
+          </p>
+        </p-panel>
+      </div>
