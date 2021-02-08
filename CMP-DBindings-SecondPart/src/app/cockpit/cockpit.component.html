@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-xs-12">
-      <p>Add new Servers or blueprints!</p>
-      <br>
-      <!-- <span class="p-float-label">
+  <div class="col-xs-12">
+    <p>Add new Servers or blueprints!</p>
+    <br />
+    <!-- <span class="p-float-label">
         <input
           type="text"
           id="serverName"
@@ -11,37 +11,33 @@
         />
         <label for="serverName">Server Name</label>
       </span> -->
-      <span class="p-float-label">
-        <input
-          type="text"
-          id="serverName"
-          #serverNameInput
-          pInputText
-        />
-        <label for="serverName">Server Name</label>
-      </span>
-      <br />
-      <span class="p-float-label">
-        <input
+    <span class="p-float-label">
+      <input type="text" id="serverName" #serverNameInput pInputText />
+      <label for="serverName">Server Name</label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <!-- <input
           pInputText
           type="text"
           id="serverContent"
           [(ngModel)]="newServerContent"
-        />
-        <label for="serverContent">Server Content</label>
-      </span>
-      <br />
-      <button
-        pButton
-        class="p-button-raised"
-        label="Add Server"
-        (click)="onAddServer(serverNameInput)"
-      ></button>
-      <button
-        pButton
-        class="p-button-raised"
-        label="Add Server Blueprint"
-        (click)="onAddBlueprint(serverNameInput)"
-      ></button>
-    </div>
+        /> -->
+      <input pInputText type="text" id="serverContent" #serverContentInput />
+      <label for="serverContent">Server Content</label>
+    </span>
+    <br />
+    <button
+      pButton
+      class="p-button-raised"
+      label="Add Server"
+      (click)="onAddServer(serverNameInput)"
+    ></button>
+    <button
+      pButton
+      class="p-button-raised"
+      label="Add Server Blueprint"
+      (click)="onAddBlueprint(serverNameInput)"
+    ></button>
   </div>
+</div>
