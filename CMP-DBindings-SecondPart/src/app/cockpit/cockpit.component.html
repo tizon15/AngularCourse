@@ -2,11 +2,20 @@
     <div class="col-xs-12">
       <p>Add new Servers or blueprints!</p>
       <br>
-      <span class="p-float-label">
+      <!-- <span class="p-float-label">
         <input
           type="text"
           id="serverName"
           [(ngModel)]="newServerName"
+          pInputText
+        />
+        <label for="serverName">Server Name</label>
+      </span> -->
+      <span class="p-float-label">
+        <input
+          type="text"
+          id="serverName"
+          #serverNameInput
           pInputText
         />
         <label for="serverName">Server Name</label>
@@ -26,13 +35,13 @@
         pButton
         class="p-button-raised"
         label="Add Server"
-        (click)="onAddServer()"
+        (click)="onAddServer(serverNameInput)"
       ></button>
       <button
         pButton
         class="p-button-raised"
         label="Add Server Blueprint"
-        (click)="onAddBlueprint()"
+        (click)="onAddBlueprint(serverNameInput)"
       ></button>
     </div>
   </div>
